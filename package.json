@@ -1,0 +1,27 @@
+{
+  "name": "true-crime-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Arabic investigative true-crime video production system built with Remotion.",
+  "scripts": {
+    "studio": "remotion studio --no-open",
+    "typecheck": "tsc --noEmit",
+    "render:sarah": "remotion render SarahKhalifa out/sarah-khalifa.mp4",
+    "check:reference": "node scripts/reference-check.mjs"
+  },
+  "dependencies": {
+    "@remotion/media": "4.0.520",
+    "@remotion/cli": "4.0.520",
+    "remotion": "4.0.520",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
