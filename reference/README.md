@@ -1,40 +1,28 @@
-# Reference Media
+# Reference material
 
-## Primary reference film
-YouTube: https://youtu.be/QyPdoI9-568
+This directory contains internal analysis/reference material used to study pacing, visual grammar, retention structure, transitions, presenter/B-roll balance, and overall documentary language.
 
-The project owner supplied a local copy named `ساره خليفه.mp4` for editing-style analysis.
+## Available now
 
-Expected metadata:
-- duration: ~1881.304 seconds (~31:21)
-- resolution: 640×360
-- H.264 video / AAC audio
-- size: 102,468,900 bytes
-- SHA-256: `b45b8ec04eeb5560e7f16aee5eed7aadc5dacf25e046740cecb76caa7c2a160e`
+- `reference-storyboard.jpg` — compact storyboard contact sheet derived from the supplied reference video.
+- `sarah-khalifa-reference-visual-proxy.mp4` — full-duration visual proxy (about 31:20). It samples the original reference film at a low frame rate so any agent can inspect the entire visual progression directly from the repository. This proxy is intentionally tiny and contains no audio.
 
-## Expected local path
-When the original reference file is available to an agent, place it at:
+## Original reference film
+
+The owner-supplied original MP4 is approximately 102 MB and is intended to live at:
 
 `reference/sarah-khalifa-reference.mp4`
 
-Then run:
+It should be added with Git LFS. Its expected SHA-256 is:
 
-```bash
-npm run check:reference
-```
+`b45b8ec04eeb5560e7f16aee5eed7aadc5dacf25e046740cecb76caa7c2a160e`
 
-## Git LFS
-This repository includes `.gitattributes` rules for MP4/WAV media. From a normal Git client:
+Expected size:
 
-```bash
-git lfs install
-git add .gitattributes reference/sarah-khalifa-reference.mp4
-git commit -m "Add Sarah Khalifa reference film via Git LFS"
-git push
-```
+`102,468,900 bytes`
 
-## Copyright boundary
-This file is a research/reference asset, not an automatically cleared publication asset. Do not ship the reference video or long excerpts in the final documentary merely because it exists in the repository.
+The proxy SHA-256 is:
 
-## Visual storyboard
-`reference-storyboard.jpg` is a low-resolution contact-sheet overview extracted for internal analysis of pacing and visual categories. It is not intended for publication.
+`e27fcfd54e4a50ebb4eab6ee24ce7a7571d0856f45467668e1d60656bc73ac92`
+
+Reference assets are for analysis/research unless publication rights are independently confirmed. Do not treat the presence of a reference asset in this repository as permission to republish it.
